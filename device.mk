@@ -114,7 +114,6 @@ PRODUCT_PACKAGES += \
 
 # Camera
 PRODUCT_PACKAGES += \
-    camera.msm8952 \
     libbson \
     Snap \
     camera.device@3.2-impl \
@@ -147,9 +146,9 @@ PRODUCT_PACKAGES += \
     libebtc
 
 # FM
-PRODUCT_PACKAGES += \
-    FMRadio \
-    libfmjni
+#PRODUCT_PACKAGES += \
+#    FMRadio \
+#    libfmjni
 
 # For android_filesystem_config.h
 PRODUCT_PACKAGES += \
