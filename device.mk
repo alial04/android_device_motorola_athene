@@ -68,11 +68,10 @@ PRODUCT_AAPT_CONFIG := normal
 PRODUCT_PACKAGES += \
     audio.a2dp.default \
     audio.usb.default \
-    audio.r_submix.default \	
+    audio.r_submix.default \
     libaudio-resampler \
-	
+
 PRODUCT_PACKAGES += \
-	
     libqcomvisualizer \
     libqcomvoiceprocessing \
     libqcomvoiceprocessingdescriptors \
@@ -86,7 +85,7 @@ PRODUCT_PACKAGES += \
     android.hardware.audio.effect@2.0-impl \
     android.hardware.broadcastradio@1.0-impl \
     android.hardware.soundtrigger@2.0-impl
-	
+
 # Audio
 PRODUCT_PACKAGES += \
     audio.primary.msm8952
@@ -167,7 +166,7 @@ PRODUCT_PACKAGES += \
 # GPS
 PRODUCT_PACKAGES += \
     gps.msm8952 \
-    libgnsspps
+    libgnsspps \
     libshims_get_process_name
 
 PRODUCT_COPY_FILES += \
