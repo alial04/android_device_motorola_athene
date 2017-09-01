@@ -815,14 +815,6 @@ service atfwd /system/bin/ATFWD-daemon
     user system
     group system radio
 
-service ril-daemon /system/bin/rild
-    class main
-    socket rild stream 660 root radio
-    socket rild-debug stream 660 radio system
-    socket cutback stream 660 media radio
-    user root
-    group radio cache inet misc audio sdcard_rw sensors diag log net_raw wakelock
-
 service ril-daemon1 /vendor/bin/hw/rild -c 2
     class main
     user root
