@@ -220,9 +220,7 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    libc2dcolorconvert \
-    libOmxAacDec \
-    libOmxAacEnc \
+   libOmxAacEnc \
     libOmxAmrEnc \
     libOmxCore \
     libOmxEvrcDec \
@@ -233,10 +231,7 @@ PRODUCT_PACKAGES += \
     libOmxQcelp13Enc \
     libOmxSwVencMpeg4 \
     libOmxSwVencHevc \
-    libOmxVdec \
-    libOmxVdecHevc \
     libOmxVidcCommon \
-    libOmxVenc \
     libstagefrighthw \
     libstagefright_soft_flacdec
 
