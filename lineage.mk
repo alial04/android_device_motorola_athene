@@ -18,12 +18,6 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 $(call inherit-product, device/motorola/athene/full_athene.mk)
 
-# ADB
-PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
-persist.service.adb.enable=1 \
-persist.service.debuggable=1 \
-persist.sys.usb.config=mtp,adb
-
 # Boot animation
 TARGET_SCREEN_WIDTH := 1080
 TARGET_SCREEN_HEIGHT := 1920
