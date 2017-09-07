@@ -817,9 +817,10 @@ service atfwd /system/bin/ATFWD-daemon
 
 service ril-daemon1 /vendor/bin/hw/rild -c 2
     class main
-    user root
-    group radio cache inet misc audio sdcard_rw sensors diag log net_raw wakelock
+    user radio
     disabled
+    group radio cache inet misc audio log readproc wakelock
+    capabilities BLOCK_SUSPEND NET_ADMIN NET_RAW
 
 service rild1-wrapper /system/bin/sh /system/etc/init.qcom.ril.sh
     class late_start
